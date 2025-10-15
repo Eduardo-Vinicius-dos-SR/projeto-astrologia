@@ -55,7 +55,7 @@ main.agradecer {
 
 .text {
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 0 auto 60px;
 	padding: 0 40px;
 	background-color: #ffffff04;
 	text-align: justify;
@@ -67,12 +67,16 @@ main.agradecer {
 	display: flex;
 	overflow: auto;
 	gap: 45px;
-	margin: 50px 0;
+	margin: 30px 0 40px;
 	padding: 40px;
 }
 
 .slider {
 	height: 700px;
+}
+
+.slider#extras {
+	height: 500px;
 }
 
 .item {
@@ -83,6 +87,12 @@ main.agradecer {
 	flex-direction: column;
 	align-items: center;
 	background: #0851780d;
+}
+
+.sub-title {
+	padding-left: 20px;
+	font-size: 2rem;
+	color: #fff;
 }
 
 .item .nome {
@@ -125,6 +135,10 @@ main.agradecer {
 	background: #000;
 	margin-bottom: 25px;
 }
+
+.slider#extras .image img {
+	max-height: 350px;
+}
 .image img {
 	max-width: 300px;
 	width: 100%;
@@ -150,7 +164,7 @@ main.agradecer {
 /* .slider#planetas .item:nth-child(1) {
 } */
 
-.agradecimento {
+.btn-agradecimento {
 	height: 100px;
 	display: flex;
 	align-items: center;
@@ -158,7 +172,7 @@ main.agradecer {
 	padding-bottom: 30px;
 }
 
-.agradecimento button {
+.btn-agradecimento button {
 	width: 40px;
 	height: 40px;
 	background: #bbb6b634;
@@ -167,6 +181,19 @@ main.agradecer {
 	cursor: pointer;
 }
 
-.agradecimento img {
+.btn-agradecimento img {
 	scale: 1.5;
+}
+
+.agradecimento {
+	display: none;
+}
+
+.agradecimento.agradecer {
+	width: 100%;
+	display: block;
+	padding: 30px;
+}
+.agradecimento.agradecer img {
+	width: 100%;
 }
